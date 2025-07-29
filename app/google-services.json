@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "664275479529",
+    "project_id": "authcompose-8a66e",
+    "storage_bucket": "authcompose-8a66e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664275479529:android:8c15b1ccc2297ee6acb978",
+        "android_client_info": {
+          "package_name": "com.cso.authcompose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq2vcLqPqx3ungYCTfxIBLavCDI41BiB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
