@@ -2,6 +2,7 @@ package com.cso.authcompose
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -171,7 +172,7 @@ interface AuthResponse {
 
 @Composable
 fun LoginScreen() {
-
+    Log.d("TestLogin", "Show Screen")
     var email by remember {
         mutableStateOf("")
     }
@@ -247,10 +248,11 @@ fun LoginScreen() {
             modifier = Modifier.fillMaxWidth(),
             onClick = {
                 authenticationManager.loginWithEmail(email, password).onEach { response ->
+//                authenticationManager.createAccountWithEmail(email, password).onEach { response ->
                     if (response is AuthResponse.Success) {
-                        print("Success")
+                        Log.d("TestLogin", "Success")
                     } else if (response is AuthResponse.Error) {
-                        print("Error ${response.message}")
+                        Log.d("TestLogin", "Erro ${response.message}")
                     }
                 }.launchIn(coroutineScope)
             }
@@ -277,9 +279,9 @@ fun LoginScreen() {
             onClick = {
                 authenticationManager.signInWithGoogle().onEach { response ->
                     if (response is AuthResponse.Success) {
-                        print("Success")
+                        Log.d("TestLogin", "Success")
                     } else if (response is AuthResponse.Error) {
-                        print("Error ${response.message}")
+                        Log.d("TestLogin", "Erro ${response.message}")
                     }
                 }.launchIn(coroutineScope)
             }) {
