@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "664275479529",
-    "project_id": "authcompose-8a66e",
-    "storage_bucket": "authcompose-8a66e.firebasestorage.app"
+    "project_number": "94598595110",
+    "project_id": "authcompose-fb",
+    "storage_bucket": "authcompose-fb.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:664275479529:android:8c15b1ccc2297ee6acb978",
+        "mobilesdk_app_id": "1:94598595110:android:af57d14633d19d961e5ce7",
         "android_client_info": {
           "package_name": "com.cso.authcompose"
         }
       },
       "oauth_client": [
         {
-          "client_id": "664275479529-gqo34621jadbmcepm7brku92iuiteg0c.apps.googleusercontent.com",
+          "client_id": "94598595110-ih1mji7onrpclm1iddqpqki9mscq3sbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cso.authcompose",
+            "certificate_hash": "8ff174b4cc6c1f4a968edcc12f4c9761f3abafcc"
+          }
+        },
+        {
+          "client_id": "94598595110-sfbqk5uaps3u6f83tqiuka0543663mkh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBq2vcLqPqx3ungYCTfxIBLavCDI41BiB4"
+          "current_key": "AIzaSyAAcSWq3r5CK32ZpfXcCNn-z20naGFvH0E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "664275479529-gqo34621jadbmcepm7brku92iuiteg0c.apps.googleusercontent.com",
+              "client_id": "94598595110-sfbqk5uaps3u6f83tqiuka0543663mkh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

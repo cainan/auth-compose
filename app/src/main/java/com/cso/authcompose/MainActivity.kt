@@ -3,6 +3,7 @@ package com.cso.authcompose
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -250,8 +251,10 @@ fun LoginScreen() {
                 authenticationManager.loginWithEmail(email, password).onEach { response ->
 //                authenticationManager.createAccountWithEmail(email, password).onEach { response ->
                     if (response is AuthResponse.Success) {
+                        Toast.makeText(context, "Success", Toast.LENGTH_SHORT).show()
                         Log.d("TestLogin", "Success")
                     } else if (response is AuthResponse.Error) {
+                        Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show()
                         Log.d("TestLogin", "Erro ${response.message}")
                     }
                 }.launchIn(coroutineScope)
@@ -279,8 +282,10 @@ fun LoginScreen() {
             onClick = {
                 authenticationManager.signInWithGoogle().onEach { response ->
                     if (response is AuthResponse.Success) {
+                        Toast.makeText(context, "Success", Toast.LENGTH_SHORT).show()
                         Log.d("TestLogin", "Success")
                     } else if (response is AuthResponse.Error) {
+                        Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show()
                         Log.d("TestLogin", "Erro ${response.message}")
                     }
                 }.launchIn(coroutineScope)
